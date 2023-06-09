@@ -1,0 +1,49 @@
+.button-contact {
+    align-items: center;
+    background-color: $color_2;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: $color_5;
+    cursor: pointer;
+    font-size: 20px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0px 40px 0px 40px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+    &:after {
+        background-color: $color_5;
+        border-radius: 8px;
+        content: "";
+        display: block;
+        height: 48px;
+        left: 0;
+        width: 100%;
+        position: absolute;
+        top: -2px;
+        transform: translate(8px, 8px);
+        transition: transform .2s ease-out;
+        z-index: -1;
+    }
+
+    &:hover {
+        &:after {
+            transform: translate(0, 0);
+        }
+
+        outline: 0;
+    }
+
+    &:active {
+        background-color: $color_2;
+        outline: 0;
+    }
+}

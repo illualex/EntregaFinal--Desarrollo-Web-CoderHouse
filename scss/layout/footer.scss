@@ -1,0 +1,23 @@
+footer {
+    display: flex;
+    background: #252525;
+    text-align: justify;
+    width: 100%;
+
+    .legal-footer {
+        color: $color_2;
+        padding: 10px;
+    }
+
+    .logo-footer {
+        height: 60px;
+    }
+
+    .redes-footer {
+        height: 40px;
+    }
+
+    .botones-footer {
+        padding: 10px;
+    }
+}

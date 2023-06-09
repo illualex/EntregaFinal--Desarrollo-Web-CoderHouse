@@ -1,0 +1,54 @@
+@import "https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@600&family=Roboto:wght@500&display=swap";
+
+$font-family_1: 'Open Sans', sans-serif;
+$font-family_2: 'Oswald', sans-serif;
+$font-family_3: 'Roboto', sans-serif;
+
+h1 {
+    font-family: $font-family_2;
+    font-size: 60px;
+}
+
+.h1-contact {
+    @extend h1;
+    padding: 10px;
+    text-align: center;
+}
+
+.h1-gallery {
+    @extend h1;
+    padding: 25px;
+    text-align: center;
+    text-decoration: underline red;
+}
+
+.age-trajectory {
+    @extend h1;
+    text-align: center;
+    text-decoration: underline red;
+}
+
+p {
+    padding: 40px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.border-p{
+    background-image: radial-gradient(circle at 100% 100%, transparent 7px, #ff0000 7px, #ff0000 11px, transparent 11px), linear-gradient(to right, #ff0000, #960008), radial-gradient(circle at 0% 100%, transparent 7px, #960008 7px, #960008 11px, transparent 11px), linear-gradient(to bottom, #960008, #000000), radial-gradient(circle at 0% 0%, transparent 7px, #000000 7px, #000000 11px, transparent 11px), linear-gradient(to left, #000000, #960008), radial-gradient(circle at 100% 0%, transparent 7px, #960008 7px, #960008 11px, transparent 11px), linear-gradient(to top, #960008, #ff0000);
+    background-size: 11px 11px, calc(100% - 22px) 4px, 11px 11px, 4px calc(100% - 22px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
+}
+
+.description-trajectory {
+    @extend p;
+    font-size: 16px;
+    text-align: left;
+    padding: 20px 10px;
+}
+
+.p-contact {
+    @extend p;
+    padding: 10px;
+}
