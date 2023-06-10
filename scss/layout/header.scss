@@ -3,6 +3,10 @@ header {
     height: 70px;
 }
 
+.active{
+    text-decoration: underline red;
+}
+
 ul.navbar-menu {
     list-style-type: none;
     margin: 0;
@@ -109,7 +113,7 @@ body.open {
     gap: 8px;
     flex-direction: column;
     align-items: flex-start;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.85);
     visibility: hidden;
     transition: translate 0.3s;
 
