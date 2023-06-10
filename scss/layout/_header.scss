@@ -3,10 +3,6 @@ header {
     height: 70px;
 }
 
-.active{
-    text-decoration: underline red;
-}
-
 ul.navbar-menu {
     list-style-type: none;
     margin: 0;
@@ -31,6 +27,9 @@ ul.navbar-menu {
                 opacity: 0.5;
                 color: red;
             }
+        }
+        .active-page{
+            text-decoration: underline red;
         }
     }
 }
